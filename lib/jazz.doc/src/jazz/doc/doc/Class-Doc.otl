@@ -1,0 +1,7 @@
+(module jazz.doc.doc.Class-Doc jazz
+  (import (jazz.doc))
+  (class Class-Doc extends Category-Doc
+    (method meta protected override (get-class-descriptor (context: context (unspecified))))
+    (property ascendant accessors generate)
+    (property interfaces accessors generate)
+    (method protected override (present))))

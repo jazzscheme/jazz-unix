@@ -1,0 +1,3 @@
+(module jazz.process.Quit-Listener jazz
+  (interface Quit-Listener
+    (method public virtual (prepare-quit))))

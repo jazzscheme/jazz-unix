@@ -1,0 +1,18 @@
+(module jazz.project.workbench.Workbench jazz
+  (import (jazz.catalog))
+  (import (jazz.feedback))
+  (import (jazz.io))
+  (import (jazz.project))
+  (class Workbench extends Project
+    (method meta protected override (get-class-descriptor (context: context (unspecified))))
+    (method protected override (print output readably))
+    (method protected override (catalog-name))
+    (method public final (find-project-by-file file))
+    (method public final (find-project-by-identity target))
+    (method public final (find-source target))
+    (method public final (find-filename filename))
+    (method protected override (catalog-output-base))
+    (method public final (load-catalogs-threaded update?))
+    (method public final (update-catalogs))
+    (method protected override (get-effective-editable?))
+    (method public final (for-each-project-file proc (include-self?: include-self? (unspecified))))))

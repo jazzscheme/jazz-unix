@@ -1,0 +1,14 @@
+(module jazz.sample.c4.C4-Application jazz
+  (import (jazz.application))
+  (import (jazz.jml))
+  (import (jazz.sample.c4))
+  (import (jazz.window))
+  (import (jazz.workspace))
+  (class C4-Application extends Application
+    (method protected override (process-name))
+    (method protected override (new-toplevel))
+    (method protected override (finish-process)))
+  (class C4-Toplevel extends Toplevel
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms))))

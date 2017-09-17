@@ -1,0 +1,6 @@
+(module jazz.document jazz
+  (export (jazz.document.Document (autoload Document Document)))
+  (export (jazz.document.Document-Controller (autoload Document-Controller Document-Controller)))
+  (export (jazz.document.Document-Moniker (autoload Document-Moniker Document-Moniker)))
+  (export (jazz.document.Document-Preferences (autoload Document-Preferences Document-Preferences)))
+  (export (jazz.document.Documents-Preferences (autoload Documents-Preferences Documents-Preferences))))

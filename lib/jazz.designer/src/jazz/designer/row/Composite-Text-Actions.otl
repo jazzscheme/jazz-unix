@@ -1,0 +1,8 @@
+(module jazz.designer.row.Composite-Text-Actions jazz
+  (import (jazz.action))
+  (import (jazz.handler))
+  (import (jazz.jml))
+  (class Composite-Text-Actions extends Actions
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms))))

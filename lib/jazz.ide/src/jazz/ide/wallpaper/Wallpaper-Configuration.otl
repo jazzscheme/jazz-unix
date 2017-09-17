@@ -1,0 +1,17 @@
+(module jazz.ide.wallpaper.Wallpaper-Configuration jazz
+  (import (jazz.jml))
+  (import (jazz.preferences))
+  (import (jazz.resource))
+  (class Wallpaper-Configuration extends Preferences
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms))
+    (method meta protected override (get-class-descriptor (context: context (unspecified))))
+    (property directory accessors generate)
+    (property mode accessors generate)
+    (property startup accessors generate)
+    (property favorites accessors generate)
+    (property period accessors generate)
+    (property recursive? accessors generate)
+    (property random? accessors generate)
+    (property active? accessors generate)))

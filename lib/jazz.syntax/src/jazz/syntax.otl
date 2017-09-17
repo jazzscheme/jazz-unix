@@ -1,0 +1,14 @@
+(module jazz.syntax jazz
+  (import (jazz.core (phase syntax)))
+  (import (jazz.dialect.classes.foundation))
+  (macro public (define-setting name . rest))
+  (class Time-Special extends Expression
+    (slot expr getter generate)
+    (slot port getter generate)
+    (method protected override (initialize expr port . rest))
+    (method protected override (emit-expression declaration environment backend)))
+  (macro public (tie . objects))
+  (class Site-Special extends Expression
+    (slot expression getter generate)
+    (method protected override (initialize expression))
+    (method protected override (emit-expression declaration environment backend))))

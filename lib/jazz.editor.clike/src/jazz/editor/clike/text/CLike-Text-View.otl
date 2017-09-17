@@ -1,0 +1,10 @@
+(module jazz.editor.clike.text.CLike-Text-View jazz
+  (import (jazz.editor))
+  (import (jazz.editor.clike))
+  (class CLike-Text-View extends Code-Text-View
+    (method protected override (install rest))
+    (method protected override (new-syntax))
+    (method protected override (return-press evt))
+    (method protected override (mouse-insert copy))
+    (definition public headers)
+    (method protected override (get-headers))))

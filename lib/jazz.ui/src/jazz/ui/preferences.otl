@@ -1,0 +1,15 @@
+(module jazz.ui.preferences jazz
+  (import (jazz.figure.preferences))
+  (import (jazz.jml))
+  (import (jazz.resource))
+  (class Frame-Preferences extends Figure-Preferences
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms)))
+  (class Guest-Preferences extends Frame-Preferences
+    (property initargs accessors generate))
+  (class Palette-Preferences extends Figure-Preferences
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms))
+    (method protected override (apply-preferences (client (unspecified))))))

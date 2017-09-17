@@ -1,0 +1,7 @@
+(module jazz.debugger.gambit.Gambit-Project jazz
+  (import (jazz.project))
+  (class Gambit-Project extends Project
+    (method meta protected override (get-class-descriptor (context: context (unspecified))))
+    (property minimum-heap accessors generate)
+    (property maximum-heap accessors generate)
+    (method protected override (concrete?))))

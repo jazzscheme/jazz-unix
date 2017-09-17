@@ -1,0 +1,9 @@
+(module jazz.groupware.favorite.Favorite-Compare-Files jazz
+  (import (jazz.favorite))
+  (import (jazz.groupware))
+  (import (jazz.workspace))
+  (class Favorite-Compare-Files extends Favorite
+    (method meta protected override (get-class-descriptor (context: context (unspecified))))
+    (property green accessors generate)
+    (property blue accessors generate)
+    (method protected override (launch))))

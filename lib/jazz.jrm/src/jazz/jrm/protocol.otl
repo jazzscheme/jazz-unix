@@ -1,0 +1,3 @@
+(module jazz.jrm.protocol jazz
+  (definition public simulated-protocol)
+  (definition public (set-simulated-protocol protocol)))

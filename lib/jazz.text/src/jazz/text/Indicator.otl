@@ -1,0 +1,8 @@
+(module jazz.text.Indicator jazz
+  (class Indicator extends Object
+    (slot color)
+    (slot active-text)
+    (slot active)
+    (method protected override (initialize color))
+    (method public final (edit text position/range (ensure-displayed?: ensure-displayed? (unspecified)) (select?: select? (unspecified))))
+    (method public final (reset))))

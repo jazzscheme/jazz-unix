@@ -1,0 +1,11 @@
+(module jazz.calendar.Date-Entry jazz
+  (import (jazz.calendar))
+  (import (jazz.designer))
+  (import (jazz.jml))
+  (import (jazz.view))
+  (class Date-Entry extends Text-Entry
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms))
+    (method protected override (layout))
+    (method protected final (on-choose-date evt))))

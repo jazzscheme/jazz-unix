@@ -1,0 +1,5 @@
+(module jazz.component.Restore-Form jazz
+  (import (jazz.component))
+  (class Restore-Form extends Form
+    (slot component getter generate)
+    (method protected override (initialize . initargs))))

@@ -1,0 +1,9 @@
+(module jazz.menu.Edit-Menu jazz
+  (import (jazz.action))
+  (import (jazz.jml))
+  (import (jazz.menu))
+  (import (jazz.resource))
+  (class Edit-Menu extends Edit-Base-Menu
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms))))

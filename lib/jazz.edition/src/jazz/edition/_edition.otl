@@ -1,0 +1,2 @@
+(module jazz.edition jazz
+  (definition public edit-document))

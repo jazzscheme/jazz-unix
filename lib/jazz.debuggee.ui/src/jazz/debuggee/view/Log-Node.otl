@@ -1,0 +1,11 @@
+(module jazz.debuggee.view.Log-Node jazz
+  (import (jazz.project))
+  (import (jazz.resource))
+  (class Log-Node extends Object
+    (slot node getter generate)
+    (method protected override (initialize node))
+    (method public virtual (node-name))
+    (method public virtual (node-image))
+    (method public virtual (node-message))
+    (method public virtual (node-location))
+    (method public virtual (edit-location tree))))

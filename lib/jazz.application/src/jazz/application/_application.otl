@@ -1,0 +1,6 @@
+(module jazz.application jazz
+  (export (jazz.application.autoload))
+  (import (jazz.process))
+  (definition public (get-application))
+  (definition package (set-application application))
+  (definition public (get-toplevel)))

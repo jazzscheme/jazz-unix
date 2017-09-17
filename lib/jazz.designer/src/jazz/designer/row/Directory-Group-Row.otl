@@ -1,0 +1,3 @@
+(module jazz.designer.row.Directory-Group-Row jazz
+  (import (jazz.designer))
+  (class Directory-Group-Row extends Pathname-Row))

@@ -1,0 +1,7 @@
+(module jazz.domain jazz
+  (export (jazz.domain.autoload))
+  (import (jazz.domain.autoload))
+  (import (jazz.resource))
+  (definition public (get-domain-category name))
+  (definition public (set-domain-category name category))
+  (definition public (read-composite-value text (separator: separator (unspecified)) (expected: expected (unspecified)))))

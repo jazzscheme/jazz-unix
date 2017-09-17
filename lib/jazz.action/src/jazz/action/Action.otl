@@ -1,0 +1,9 @@
+(module jazz.action.Action jazz
+  (class Action extends Object
+    (method meta protected override (marshall-object obj))
+    (method meta protected override (unmarshall-object content))
+    (slot action-context getter generate)
+    (slot action-name getter generate)
+    (slot properties getter generate)
+    (method protected override (initialize action-context action-name properties))
+    (method protected override (print output readably))))

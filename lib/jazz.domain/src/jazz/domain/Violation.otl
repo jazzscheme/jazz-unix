@@ -1,0 +1,5 @@
+(module jazz.domain.Violation jazz
+  (class Violation extends Object
+    (slot message getter generate)
+    (method protected override (initialize (message: message (unspecified))))
+    (method protected override (print output readably))))

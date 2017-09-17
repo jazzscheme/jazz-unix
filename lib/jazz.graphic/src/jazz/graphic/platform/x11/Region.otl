@@ -1,0 +1,3 @@
+(module jazz.graphic.platform.x11.Region jazz
+  (import (jazz.graphic))
+  (class Region extends Cairo-Region))

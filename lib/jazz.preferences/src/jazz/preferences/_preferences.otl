@@ -1,0 +1,16 @@
+(module jazz.preferences jazz
+  (import (jazz.component))
+  (import (jazz.process))
+  (definition public (get-preferences name (error?: error? (unspecified))))
+  (definition public (get-preferences-root))
+  (definition public (set-preference preferences property value))
+  (definition public (sort-case-sensitive?))
+  (definition public (sort-predicates))
+  (definition public (sort-predicate name))
+  (class Preferences extends Component
+    (method meta protected override (get-class-descriptor (context: context (unspecified))))
+    (property title accessors generate)
+    (property icon accessors generate)
+    (method public virtual (apply-preferences (client (unspecified))))
+    (method public virtual (save-preferences designer (client (unspecified))))
+    (method public final (set-property designer property value))))

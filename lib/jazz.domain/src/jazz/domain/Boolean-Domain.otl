@@ -1,0 +1,12 @@
+(module jazz.domain.Boolean-Domain jazz
+  (import (jazz.domain))
+  (import (jazz.jml))
+  (import (jazz.locale))
+  (class Boolean-Domain extends Domain
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms))
+    (method protected override (validate-value value (validation-context (unspecified))))
+    (method protected override (parse-presentation text))
+    (method protected override (present-value value))
+    (method protected override (setup-entry view client))))

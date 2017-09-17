@@ -1,0 +1,5 @@
+(module jazz.action.Orphaned-Actions jazz
+  (import (jazz.action))
+  (class Orphaned-Actions extends Actions
+    (method meta protected override (get-class-descriptor (context: context (unspecified))))
+    (method protected override (actions-orphaned?))))

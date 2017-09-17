@@ -1,0 +1,10 @@
+(module jazz.designer.menu.Component-Menu jazz
+  (import (jazz.action))
+  (import (jazz.designer))
+  (import (jazz.jml))
+  (import (jazz.menu))
+  (import (jazz.resource))
+  (class Component-Menu extends Context-Menu
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms))))

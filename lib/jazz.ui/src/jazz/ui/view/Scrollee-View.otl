@@ -1,0 +1,8 @@
+(module jazz.ui.view.Scrollee-View jazz
+  (import (jazz.ui))
+  (class Scrollee-View extends Content-View
+    (slot last-pos)
+    (slot dragging?)
+    (method protected override (mouse-down evt))
+    (method protected override (drag-move evt))
+    (method protected override (drag-up evt . rest))))

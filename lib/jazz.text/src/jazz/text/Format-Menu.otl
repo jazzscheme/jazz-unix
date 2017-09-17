@@ -1,0 +1,8 @@
+(module jazz.text.Format-Menu jazz
+  (import (jazz.action))
+  (import (jazz.jml))
+  (import (jazz.menu))
+  (class Format-Menu extends Context-Menu
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms))))

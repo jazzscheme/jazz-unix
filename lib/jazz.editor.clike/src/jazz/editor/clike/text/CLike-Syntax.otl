@@ -1,0 +1,17 @@
+(module jazz.editor.clike.text.CLike-Syntax jazz
+  (import (jazz.application))
+  (import (jazz.automata))
+  (import (jazz.catalog))
+  (import (jazz.editor))
+  (import (jazz.editor.c))
+  (import (jazz.io))
+  (class CLike-Syntax extends Code-Syntax
+    (method protected virtual (get-keywords))
+    (method protected virtual (get-profile-macros profile))
+    (method protected virtual (get-profile-keywords profile))
+    (method protected virtual (get-profile-types profile))
+    (method protected override (name-at range))
+    (method protected override (compute-syntax-targets))
+    (method protected override (compute-syntax-automata))
+    (method protected override (colorize-type found type start end colorizer recolorize?))
+    (method protected override (get-parsed-entries))))

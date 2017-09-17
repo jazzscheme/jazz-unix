@@ -1,0 +1,4 @@
+(module jazz.media.platform.x11 jazz
+  (import (jazz.platform))
+  (definition public (play-sound sound (volume: volume (unspecified)) (asynchronous?: asynchronous? (unspecified))))
+  (definition public (error-sound)))

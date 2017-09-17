@@ -1,0 +1,11 @@
+(module jazz.ui.dialog.Dialog jazz
+  (import (jazz.event))
+  (import (jazz.ui))
+  (import (jazz.window))
+  (class Dialog extends Overlapped
+    (property closable? accessors generate)
+    (property miniaturizable? accessors generate)
+    (property sizable? accessors generate)
+    (method protected override (new-root))
+    (method protected override (close-window))
+    (method protected override (destroy))))

@@ -1,0 +1,6 @@
+(module jazz.editor.java.parser.Java-Parser jazz
+  (import (jazz.catalog))
+  (import (jazz.editor.java))
+  (class Java-Parser extends File-Parser
+    (method meta protected override (get-constituent-test))
+    (method protected override (parse file digest dialect))))

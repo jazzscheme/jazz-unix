@@ -1,0 +1,2 @@
+(module jazz.sample.gameserver jazz
+  (export (jazz.sample.gameserver.autoload)))

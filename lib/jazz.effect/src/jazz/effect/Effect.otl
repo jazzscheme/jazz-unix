@@ -1,0 +1,3 @@
+(module jazz.effect.Effect jazz
+  (class Effect extends Object
+    (method public virtual (animate src dst pos size))))

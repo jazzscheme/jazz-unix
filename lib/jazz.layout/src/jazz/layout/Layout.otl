@@ -1,0 +1,4 @@
+(module jazz.layout.Layout jazz
+  (import (jazz.component))
+  (class Layout extends Component
+    (method public virtual (layout figures width height . rest))))

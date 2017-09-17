@@ -1,0 +1,18 @@
+(package jazz.window
+  
+  (title "Window")
+  (description "Cross-platform windows")
+  (authors "Guillaume Cartier")
+  (stage release)
+  (root "src")
+  (products (jazz.window (alias window)
+                         (update jazz.window)
+                         (dependencies jazz))
+            (jazz.window.desc (alias window.desc)
+                              (description "Window descriptors")
+                              (update jazz.window.descriptors)
+                              (dependencies jazz
+                                            jazz.descriptor
+                                            jazz.domain
+                                            jazz.jml)))
+  (project ".project"))

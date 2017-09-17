@@ -1,0 +1,2 @@
+(module jazz.sample.gameserver.run jazz
+  (import (jazz.sample.gameserver.Game-Server)))

@@ -1,0 +1,8 @@
+(module fmt scheme
+  (import (scheme))
+  (import (fmt.let-optionals (phase syntax)))
+  (import (fmt.mantissa))
+  (import (fmt.string-ports))
+  (import (srfi-1))
+  (import (srfi-13))
+  (import (srfi-69)))

@@ -1,0 +1,8 @@
+(module jazz.window.Popup jazz
+  (import (jazz.window))
+  (class Popup extends Overlapped
+    (slot initiator accessors generate)
+    (method protected override (conclude rest))
+    (method protected override (show))
+    (method protected override (destroy))
+    (method protected override (mouse-activate?))))

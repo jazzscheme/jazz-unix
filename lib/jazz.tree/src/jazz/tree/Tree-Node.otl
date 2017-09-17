@@ -1,0 +1,5 @@
+(module jazz.tree.Tree-Node jazz
+  (import (jazz.tree))
+  (class Tree-Node extends Tree-Label
+    (slot protected image accessors generate)
+    (method protected override (initialize . rest))))

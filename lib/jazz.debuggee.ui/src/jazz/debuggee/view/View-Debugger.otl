@@ -1,0 +1,20 @@
+(module jazz.debuggee.view.View-Debugger jazz
+  (import (jazz.action))
+  (import (jazz.application))
+  (import (jazz.debuggee))
+  (import (jazz.debuggee.view))
+  (import (jazz.handler))
+  (import (jazz.jml))
+  (import (jazz.menu))
+  (import (jazz.picker))
+  (import (jazz.resource))
+  (import (jazz.tree))
+  (import (jazz.ui.development))
+  (class View-Debugger extends Object
+    (method public final (debug-views))
+    (method public final (explore-views))
+    (method package final (on-debug-action evt)))
+  (class Debug-View-Menu extends Context-Menu
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms))))

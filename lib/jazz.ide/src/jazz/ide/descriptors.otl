@@ -1,0 +1,20 @@
+(module jazz.ide.descriptors jazz
+  (import (jazz.descriptor))
+  (import (jazz.domain))
+  (import (jazz.ide))
+  (import (jazz.jml))
+  (import (jazz.preferences.descriptors))
+  (class Catalog-Preferences-Descriptor extends Preferences-Descriptor
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms)))
+  (class Wallpaper-Preferences-Descriptor extends Preferences-Descriptor
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms))
+    (method protected override (component-get-categorized-addable-classes component))
+    (method protected override (component-get-addable-details component)))
+  (class Wallpaper-Configuration-Descriptor extends Preferences-Descriptor
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms))))

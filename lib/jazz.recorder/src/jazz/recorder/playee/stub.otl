@@ -1,0 +1,23 @@
+(module jazz.recorder.playee.stub jazz
+  (import (jazz.jrm.syntax (phase syntax)))
+  (import (jazz.jrm))
+  (class Recorder-Playee-Stub-Interface extends Stub-Interface
+    (method protected override (local-class))
+    (method protected override (remote-class)))
+  (interface Recorder-Playee-Stub metaclass Recorder-Playee-Stub-Interface extends Remotable-Stub
+    (method public virtual (start-recording))
+    (method public virtual (stop-recording))
+    (method public virtual (play-recording __player))
+    (method public virtual (end-playing __player)))
+  (class Recorder-Playee-Local-Proxy extends Local-Proxy implements Recorder-Playee-Stub
+    (method protected override (stub-reference))
+    (method protected override (start-recording))
+    (method protected override (stop-recording))
+    (method protected override (play-recording __player))
+    (method protected override (end-playing __player)))
+  (class Recorder-Playee-Remote-Proxy extends Remote-Proxy implements Recorder-Playee-Stub
+    (method protected override (stub-reference))
+    (method protected override (start-recording))
+    (method protected override (stop-recording))
+    (method protected override (play-recording __player))
+    (method protected override (end-playing __player))))

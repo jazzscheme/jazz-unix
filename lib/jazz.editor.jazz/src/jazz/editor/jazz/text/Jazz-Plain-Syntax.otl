@@ -1,0 +1,10 @@
+(module jazz.editor.jazz.text.Jazz-Plain-Syntax jazz
+  (import (jazz.editor.jazz))
+  (import (jazz.text))
+  (class Jazz-Plain-Syntax extends Text-Syntax
+    (method protected override (comment-string))
+    (method protected override (title-comment-string))
+    (method protected override (colorize-syntax (colorizer?: colorizer? (unspecified))))
+    (method protected override (colorize-comments . rest))
+    (method protected override (recolorize-text syntax-style start end-line))
+    (method protected final (type-heuristic))))

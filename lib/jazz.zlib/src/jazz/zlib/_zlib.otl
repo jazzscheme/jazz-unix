@@ -1,0 +1,6 @@
+(module jazz.zlib jazz
+  (export (jazz.zlib.foreign))
+  (import (jazz.zlib.foreign))
+  (definition public (zlib-deflate in (level: level (unspecified)) (gzip?: gzip? (unspecified)) (chunk: chunk (unspecified))))
+  (definition public (zlib-inflate in (gzip?: gzip? (unspecified)) (chunk: chunk (unspecified))))
+  (definition public (zlib-inflate! out in (gzip?: gzip? (unspecified)))))

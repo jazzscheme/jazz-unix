@@ -1,0 +1,11 @@
+(package gambit
+  
+  (title "Gambit")
+  (description "Gambit dialect")
+  (authors "Guillaume Cartier")
+  (stage experimental)
+  (root "src")
+  (products (gambit (update gambit)
+                    (dependencies jazz
+                                  scheme)))
+  (project ".project"))

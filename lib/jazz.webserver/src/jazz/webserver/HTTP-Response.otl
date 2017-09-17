@@ -1,0 +1,7 @@
+(module jazz.webserver.HTTP-Response jazz
+  (import (jazz.webserver))
+  (class HTTP-Response extends HTTP-Message
+    (slot code getter generate)
+    (method protected override (initialize (code: code (unspecified)) (content: content (unspecified))))
+    (method protected override (parse port))
+    (method protected override (send port))))

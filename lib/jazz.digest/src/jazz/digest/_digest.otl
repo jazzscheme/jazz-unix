@@ -1,0 +1,10 @@
+(module jazz.digest jazz
+  (import (jazz.time))
+  (definition package (construct-file-digest hash time))
+  (definition public (file-digest file (digest (unspecified))))
+  (class File-Digest extends Object
+    (slot hash getter generate)
+    (slot time getter generate)
+    (method protected override (initialize hash time))
+    (method protected override (compare-object target))
+    (method protected override (print output readably))))

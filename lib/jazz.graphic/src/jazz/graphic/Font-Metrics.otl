@@ -1,0 +1,11 @@
+(module jazz.graphic.Font-Metrics jazz
+  (import (jazz.cairo))
+  (class Font-Metrics extends Object
+    (slot metrics)
+    (slot height-adjust-hack)
+    (method protected override (initialize metrics height-adjust-hack))
+    (method protected override (destroy))
+    (method protected override (print output readably))
+    (method public final (get-height) <fx>)
+    (method public final (get-ascent) <fx>)
+    (method public final (get-max-char-width) <fx>)))

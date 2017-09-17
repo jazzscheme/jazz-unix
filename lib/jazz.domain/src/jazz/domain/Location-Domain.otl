@@ -1,0 +1,11 @@
+(module jazz.domain.Location-Domain jazz
+  (import (jazz.domain))
+  (import (jazz.figure))
+  (import (jazz.jml))
+  (import (jazz.locale))
+  (import (jazz.reference))
+  (class Location-Domain extends Enumeration-Domain
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms))
+    (method protected override (setup-entry view client))))

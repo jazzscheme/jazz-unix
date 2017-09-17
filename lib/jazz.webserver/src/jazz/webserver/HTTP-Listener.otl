@@ -1,0 +1,6 @@
+(module jazz.webserver.HTTP-Listener jazz
+  (interface HTTP-Listener
+    (method public virtual (hit server))
+    (method public virtual (receive-request server request))
+    (method public virtual (receive-pages-request server request resource pages-class))
+    (method public virtual (process-request server request response))))

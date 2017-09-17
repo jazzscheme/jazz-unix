@@ -1,0 +1,3 @@
+(module jazz.designer.row.Foreign-Row jazz
+  (import (jazz.designer))
+  (class Foreign-Row extends Combo-Row))

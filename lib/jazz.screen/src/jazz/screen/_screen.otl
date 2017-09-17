@@ -1,0 +1,13 @@
+(module jazz.screen jazz
+  (export (jazz.screen.platform.x11))
+  (export (jazz.screen.autoload))
+  (import (jazz.geometry))
+  (import (jazz.screen.platform.x11))
+  (definition public (main-screen))
+  (definition public (auxiliary-screen))
+  (definition public (primary-screen))
+  (definition public (secondary-screen))
+  (definition public (find-screen kind))
+  (definition public (all-screens))
+  (definition public (center-screen screen size))
+  (definition public (screen=? x y)))

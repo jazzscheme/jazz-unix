@@ -1,0 +1,6 @@
+(module jazz.domain.Literal-Domain jazz
+  (import (jazz.domain))
+  (class Literal-Domain extends Value-Domain
+    (property is)
+    (method protected override (validate-value value (validation-context (unspecified))))
+    (method protected override (setup-entry view client))))

@@ -1,0 +1,12 @@
+(module jazz.project.project.Project-Catalog jazz
+  (import (jazz.catalog))
+  (import (jazz.project))
+  (class Project-Catalog extends Filing-Catalog
+    (slot project getter generate)
+    (method protected override (initialize project . rest))
+    (method protected override (get-active?))
+    (method protected override (get-extensions))
+    (method protected override (get-heuristics))
+    (method protected override (setup-contexts))
+    (method protected override (save?))
+    (method protected override (iterate-files proc))))

@@ -1,0 +1,6 @@
+(module jazz.layout.Fit-Layout jazz
+  (import (jazz.geometry))
+  (import (jazz.layout))
+  (class Fit-Layout extends Layout
+    (property insets <Rect> accessors generate)
+    (method protected override (layout view))))

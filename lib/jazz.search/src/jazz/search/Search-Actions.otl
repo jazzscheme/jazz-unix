@@ -1,0 +1,10 @@
+(module jazz.search.Search-Actions jazz
+  (import (jazz.action))
+  (import (jazz.handler))
+  (import (jazz.jml))
+  (import (jazz.search))
+  (class Search-Actions extends Actions
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms))
+    (method protected override (update-actions for))))

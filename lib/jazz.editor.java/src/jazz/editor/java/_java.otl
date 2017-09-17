@@ -1,0 +1,2 @@
+(module jazz.editor.java jazz
+  (export (jazz.editor.java.autoload)))

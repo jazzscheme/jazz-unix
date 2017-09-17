@@ -1,0 +1,9 @@
+(module jazz.component.Group jazz
+  (import (jazz.component))
+  (class Group extends Component
+    (method meta protected override (get-class-descriptor (context: context (unspecified))))
+    (property title accessors generate)
+    (property icon accessors generate)
+    (property classes accessors generate)
+    (property sort? accessors generate)
+    (method protected override (print output readably))))

@@ -1,0 +1,6 @@
+(module jazz.history jazz
+  (export (jazz.history.History-Document-Item (autoload History-Document-Item History-Document-Item)))
+  (export (jazz.history.History-File-Item (autoload History-File-Item History-File-Item)))
+  (export (jazz.history.History-Item (autoload History-Item History-Item)))
+  (export (jazz.history.History-Manager (autoload History-Manager History-Manager)))
+  (export (jazz.history.History-Provider (autoload History-Provider History-Provider))))

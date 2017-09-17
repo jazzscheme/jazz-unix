@@ -1,0 +1,7 @@
+(module jazz.doc.doc.Property-Doc jazz
+  (import (jazz.doc))
+  (class Property-Doc extends Slot-Doc
+    (method meta protected override (get-class-descriptor (context: context (unspecified))))
+    (property getter accessors generate)
+    (property setter accessors generate)
+    (method protected override (present-text))))

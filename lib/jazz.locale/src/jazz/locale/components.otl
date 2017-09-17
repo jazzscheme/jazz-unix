@@ -1,0 +1,20 @@
+(module jazz.locale.components jazz
+  (import (jazz.component))
+  (import (jazz.designer.view))
+  (import (jazz.jml))
+  (import (jazz.locale))
+  (class Locale-Node extends Component
+    (method meta protected override (get-class-descriptor (context: context (unspecified))))
+    (property title accessors generate)
+    (method public final (get-locale))
+    (method protected final (register-node-locale locale-state)))
+  (class Locale-Tree extends Locale-Node implements Locales-Provider
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms))
+    (method protected override (default-name))
+    (method public final (collect-missing-localizations object))
+    (method public final (register-locales locale-state))
+    (method protected override (provide-locales)))
+  (definition public (validate-locales value locale-tree violation-adder))
+  (definition public (get-locale-tree client)))

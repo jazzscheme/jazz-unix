@@ -1,0 +1,4 @@
+(module jazz.domain.List-Domain jazz
+  (import (jazz.domain))
+  (class List-Domain extends Value-Domain
+    (method protected override (validate-value value (validation-context (unspecified))))))

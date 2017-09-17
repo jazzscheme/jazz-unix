@@ -1,0 +1,12 @@
+(module jazz.graphic.Base-Region jazz
+  (class Base-Region extends Object
+    (method public virtual (get-box) <Rect>)
+    (method public virtual (iterate-rectangles))
+    (method public virtual (offset! h v))
+    (method public virtual (combine-and! region))
+    (method public virtual (combine-or! region))
+    (method public virtual (combine-xor! region))
+    (method public virtual (combine-diff! region))
+    (method public virtual (empty!))
+    (method public virtual (empty?))
+    (method public virtual (intersects-rect? rect))))

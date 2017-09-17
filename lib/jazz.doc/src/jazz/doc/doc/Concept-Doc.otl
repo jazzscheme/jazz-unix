@@ -1,0 +1,4 @@
+(module jazz.doc.doc.Concept-Doc jazz
+  (import (jazz.doc))
+  (class Concept-Doc extends Doc
+    (method meta protected override (get-class-descriptor (context: context (unspecified))))))

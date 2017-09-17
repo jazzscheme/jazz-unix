@@ -1,0 +1,9 @@
+(module jazz.groupware.preference.Compare-Directories-Preferences jazz
+  (import (jazz.groupware))
+  (import (jazz.jml))
+  (import (jazz.resource))
+  (class Compare-Directories-Preferences extends Compare-Trees-Preferences
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms))
+    (method meta protected override (get-class-descriptor (context: context (unspecified))))))

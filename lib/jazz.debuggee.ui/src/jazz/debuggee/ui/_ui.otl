@@ -1,0 +1,6 @@
+(module jazz.debuggee.ui jazz
+  (export (jazz.debuggee.ui.autoload))
+  (import (jazz.debuggee.ui.autoload))
+  (import (jazz.jrm))
+  (import (jazz.debuggee.ui.stub))
+  (definition public (make-ui-debuggee)))

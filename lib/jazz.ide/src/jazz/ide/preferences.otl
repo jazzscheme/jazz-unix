@@ -1,0 +1,33 @@
+(module jazz.ide.preferences jazz
+  (import (jazz.exemplar))
+  (import (jazz.graphic))
+  (import (jazz.jml))
+  (import (jazz.preferences))
+  (import (jazz.resource))
+  (import (jazz.ui.preferences))
+  (class Colors-Preferences extends Exemplars-Preferences
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms))
+    (method meta protected override (get-class-descriptor (context: context (unspecified)))))
+  (class Color-Preferences extends Exemplar-Preferences
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms))
+    (method meta protected override (get-class-descriptor (context: context (unspecified))))
+    (property red accessors generate)
+    (property green accessors generate)
+    (property blue accessors generate)
+    (property alpha accessors generate)
+    (method protected override (->exemplar)))
+  (class Catalog-Preferences extends Preferences
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms))
+    (method meta protected override (get-class-descriptor (context: context (unspecified))))
+    (property startup-update? accessors generate)
+    (property recolorize-on-save? accessors generate))
+  (class Preferences-Manager-Preferences extends Frame-Preferences
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms))))

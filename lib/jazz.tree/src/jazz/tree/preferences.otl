@@ -1,0 +1,10 @@
+(module jazz.tree.preferences jazz
+  (import (jazz.jml))
+  (import (jazz.preferences))
+  (import (jazz.resource))
+  (class Tree-Preferences extends Preferences
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms))
+    (method meta protected override (get-class-descriptor (context: context (unspecified))))
+    (property sort-case-sensitive? accessors generate)))

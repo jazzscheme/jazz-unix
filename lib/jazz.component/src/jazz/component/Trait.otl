@@ -1,0 +1,12 @@
+(module jazz.component.Trait jazz
+  (import (jazz.component))
+  (class Trait extends Component
+    (method meta protected override (get-class-descriptor (context: context (unspecified))))
+    (property inherit accessors generate)
+    (property client-type accessors generate)
+    (property client-form accessors generate)
+    (slot restoreable? accessors generate)
+    (method protected final (setup-client-type type))
+    (method protected final (compute-effective-traits))
+    (method protected final (configure-client client parent))
+    (method public final (installed?))))

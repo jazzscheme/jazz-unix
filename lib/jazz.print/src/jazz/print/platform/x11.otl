@@ -1,0 +1,2 @@
+(module jazz.print.platform.x11 jazz
+  (definition package (platform-print-document view)))

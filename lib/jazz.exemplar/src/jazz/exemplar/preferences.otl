@@ -1,0 +1,18 @@
+(module jazz.exemplar.preferences jazz
+  (import (jazz.exemplar))
+  (import (jazz.jml))
+  (import (jazz.preferences))
+  (import (jazz.resource))
+  (class Exemplars-Preferences extends Preferences
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms))
+    (method meta protected override (get-class-descriptor (context: context (unspecified))))
+    (method public final (register-children domain)))
+  (class Exemplar-Preferences extends Preferences
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms))
+    (method meta protected override (get-class-descriptor (context: context (unspecified))))
+    (property base accessors generate)
+    (method protected virtual (->exemplar))))

@@ -1,0 +1,9 @@
+(module jazz.search.Text-Search-Result jazz
+  (import (jazz.search))
+  (import (jazz.ui))
+  (import (jazz.workspace))
+  (class Text-Search-Result extends Search-Result
+    (slot client getter generate)
+    (method protected override (initialize resultset (client: client (unspecified)) (beginning: beginning (unspecified)) (ending: ending (unspecified))))
+    (method protected override (effective-client))
+    (method protected override (install-indicators beginning-indicator ending-indicator))))

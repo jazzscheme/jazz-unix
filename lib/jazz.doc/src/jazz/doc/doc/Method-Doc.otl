@@ -1,0 +1,5 @@
+(module jazz.doc.doc.Method-Doc jazz
+  (import (jazz.doc))
+  (class Method-Doc extends Definition-Doc
+    (method meta protected override (get-class-descriptor (context: context (unspecified))))
+    (property propagation accessors generate)))

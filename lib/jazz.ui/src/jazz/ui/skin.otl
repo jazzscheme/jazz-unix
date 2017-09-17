@@ -1,0 +1,89 @@
+(module jazz.ui.skin jazz
+  (import (jazz.component))
+  (import (jazz.graphic))
+  (import (jazz.jml))
+  (import (jazz.skin))
+  (import (jazz.ui))
+  (class UI-Skin extends Skin
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms)))
+  (class Border-Skin extends Skin
+    (property edge-flat? accessors generate))
+  (class Docked-Skin extends Skin
+    (property background accessors generate)
+    (property active-background accessors generate)
+    (property inactive-background accessors generate)
+    (property frame-color accessors generate)
+    (property focused-text-color accessors generate)
+    (property unfocused-text-color accessors generate))
+  (class Group-Skin extends Skin
+    (property background accessors generate)
+    (property text-color accessors generate)
+    (property border-flat? accessors generate)
+    (property border-color accessors generate))
+  (class Header-Skin extends Skin
+    (property background accessors generate)
+    (property title-color accessors generate)
+    (property flat? accessors generate))
+  (class Button-Skin extends Skin
+    (property background accessors generate))
+  (class Check-Skin extends Skin
+    (property text-color accessors generate))
+  (class Radio-Skin extends Skin
+    (property text-color accessors generate))
+  (class Combo-Skin extends Skin
+    (property left-padding accessors generate)
+    (property top-padding accessors generate)
+    (property text-font accessors generate)
+    (property arrow-color accessors generate)
+    (property button-border accessors generate))
+  (class Label-Skin extends Skin
+    (property background accessors generate)
+    (property text-color accessors generate))
+  (class Menu-Skin extends Skin
+    (property background accessors generate)
+    (property highlight accessors generate)
+    (property text-font accessors generate)
+    (property text-color accessors generate)
+    (property selected-text-color accessors generate)
+    (property disabled-text-color accessors generate)
+    (property check-mark-white? accessors generate))
+  (class Menubar-Skin extends Skin
+    (property background accessors generate)
+    (property highlight accessors generate))
+  (class Scrollbar-Skin extends Skin
+    (property background accessors generate)
+    (property thumb accessors generate)
+    (property flat? accessors generate))
+  (class Splitter-Skin extends Skin
+    (property background accessors generate))
+  (class Stage-Skin extends Skin
+    (property background accessors generate)
+    (property border accessors generate))
+  (class Toolbar-Skin extends Skin
+    (property background accessors generate)
+    (property text-color accessors generate))
+  (class Statusbar-Skin extends Toolbar-Skin)
+  (class Tab-Skin extends Skin
+    (property background accessors generate))
+  (class Text-Skin extends Skin
+    (property background accessors generate)
+    (property caret-color accessors generate)
+    (property active-selection-color accessors generate)
+    (property inactive-selection-color accessors generate)
+    (property completion-color accessors generate))
+  (class Tool-Skin extends Skin
+    (property active-background accessors generate)
+    (property inactive-background accessors generate)
+    (property highlight accessors generate)
+    (property focused-text-color accessors generate)
+    (property unfocused-text-color accessors generate))
+  (class Tree-Skin extends Skin
+    (property background accessors generate)
+    (property text-color accessors generate)
+    (property line-color accessors generate)
+    (property focused-border accessors generate)
+    (property focused-color accessors generate)
+    (property unfocused-border accessors generate)
+    (property unfocused-color accessors generate)))

@@ -1,0 +1,10 @@
+(module jazz.jml.preference.JML-Preferences jazz
+  (import (jazz.component))
+  (class JML-Preferences extends Component
+    (method meta protected override (get-class-descriptor (context: context (unspecified))))
+    (property target accessors generate)
+    (property jml-directory accessors generate)
+    (property html-directory accessors generate)
+    (property debug-tables? accessors generate)
+    (property debug-colors? accessors generate)
+    (property tab-size accessors generate)))

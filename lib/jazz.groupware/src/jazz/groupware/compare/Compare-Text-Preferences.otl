@@ -1,0 +1,11 @@
+(module jazz.groupware.compare.Compare-Text-Preferences jazz
+  (import (jazz.editor))
+  (import (jazz.jml))
+  (import (jazz.text))
+  (class Compare-Text-Preferences extends Code-Text-Preferences
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms))
+    (method meta protected override (get-class-descriptor (context: context (unspecified))))
+    (property left-style accessors generate)
+    (property right-style accessors generate)))

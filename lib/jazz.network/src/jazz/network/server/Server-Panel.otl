@@ -1,0 +1,12 @@
+(module jazz.network.server.Server-Panel jazz
+  (import (jazz.debuggee))
+  (import (jazz.event))
+  (import (jazz.jrm))
+  (import (jazz.network))
+  (import (jazz.process))
+  (import (jazz.settings))
+  (import (jazz.snapshot))
+  (class Server-Panel extends Object
+    (method protected final (run-loop server))
+    (method protected virtual (process-server-command command arguments output))
+    (method protected virtual (output-server-info detailed? output))))

@@ -1,0 +1,14 @@
+(module jazz.tree.Tree-Label-Column jazz
+  (import (jazz.graphic))
+  (import (jazz.locale))
+  (import (jazz.tree))
+  (class Tree-Label-Column extends Tree-Column
+    (method meta protected override (get-class-descriptor (context: context (unspecified))))
+    (property protected padding accessors generate)
+    (method protected override (cell-class))
+    (method protected override (get-data-tooltip data))
+    (method protected override (draw-at surface context row data h v width height))
+    (method protected virtual (draw-title surface context row data h v width height))
+    (method protected virtual (title-position surface width height title))
+    (method protected final (cell-color color context))
+    (method protected override (text-h level))))

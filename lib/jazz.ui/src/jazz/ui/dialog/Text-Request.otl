@@ -1,0 +1,10 @@
+(module jazz.ui.dialog.Text-Request jazz
+  (import (jazz.handler))
+  (import (jazz.jml))
+  (import (jazz.text))
+  (import (jazz.ui))
+  (import (jazz.view))
+  (class Text-Request extends View
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms))))

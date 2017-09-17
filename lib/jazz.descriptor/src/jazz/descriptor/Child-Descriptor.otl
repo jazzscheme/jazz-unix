@@ -1,0 +1,7 @@
+(module jazz.descriptor.Child-Descriptor jazz
+  (import (jazz.component))
+  (class Child-Descriptor extends Component
+    (property title accessors generate)
+    (property target accessors generate)
+    (property classes accessors generate)
+    (property mandatory? accessors generate)))

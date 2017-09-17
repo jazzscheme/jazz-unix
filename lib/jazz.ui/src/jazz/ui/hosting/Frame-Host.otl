@@ -1,0 +1,15 @@
+(module jazz.ui.hosting.Frame-Host jazz
+  (import (jazz.application))
+  (import (jazz.component))
+  (import (jazz.document))
+  (import (jazz.ui))
+  (import (jazz.window))
+  (import (jazz.workspace))
+  (class Frame-Host extends Host-View
+    (method protected override (conclude rest))
+    (method protected virtual (activate-frame))
+    (method protected virtual (deactivate-frame))
+    (method protected virtual (close-host (confirm?: confirm? (unspecified))))
+    (method protected override (close-with-confirm))
+    (method protected override (destroy))
+    (method protected override (confirm-close . rest))))

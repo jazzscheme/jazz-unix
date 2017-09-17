@@ -1,0 +1,10 @@
+(module jazz.command jazz
+  (export (jazz.command.Command-Shell (autoload Command-Shell Command-Shell)))
+  (export (jazz.command.Command-Text-Preferences (autoload Command-Text-Preferences Command-Text-Preferences)))
+  (export (jazz.command.Command-Text-View (autoload Command-Text-View Command-Mode Command-Text-View Command-Mode)))
+  (export (jazz.command.Command-Toolbar (autoload Command-Toolbar Command-Toolbar)))
+  (export (jazz.command.Execute-Mode-Actions (autoload Execute-Mode-Actions Execute-Mode-Actions)))
+  (export (jazz.command.Extended-Mode-Actions (autoload Extended-Mode-Actions Extended-Mode-Actions)))
+  (export (jazz.command.Find-Mode-Actions (autoload Find-Mode-Actions Find-Mode-Actions)))
+  (export (jazz.command.Highlight-Mode-Actions (autoload Highlight-Mode-Actions Highlight-Mode-Actions)))
+  (export (jazz.command.Search-Mode-Actions (autoload Search-Mode-Actions Search-Mode-Actions))))

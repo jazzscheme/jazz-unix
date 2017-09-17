@@ -1,0 +1,10 @@
+(module jazz.editor.diff.text.Diff-Syntax jazz
+  (import (jazz.editor))
+  (import (jazz.preferences))
+  (class Diff-Syntax extends Code-Syntax
+    (method protected override (preferences))
+    (definition public headers)
+    (method protected override (get-headers))
+    (method protected override (get-chapter-label string col from to))
+    (method protected override (get-first-special?))
+    (method protected override (colorize-syntax (colorizer?: colorizer? (unspecified)) (entries?: entries? (unspecified))))))

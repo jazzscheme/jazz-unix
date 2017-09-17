@@ -1,0 +1,4 @@
+(module jazz.recorder.player.Recorder-Player jazz
+  (class Recorder-Player extends Object
+    (method public final (playee-feedback playee step))
+    (method public final (play-recording-feedback playee))))

@@ -1,0 +1,15 @@
+(module jazz.sample.gameserver.Game-Pages jazz
+  (import (jazz.jml))
+  (import (jazz.webserver))
+  (class Game-Pages extends HTTP-Request-Handler
+    (slot page-name accessors generate)
+    (method protected final (play-players game move))
+    (method protected final (effective-players players))
+    (method protected final (effective-current value))
+    (method protected final (effective-goto game value))
+    (method protected final (serialize-game game))
+    (method protected final (deserialize-game request game goto current))
+    (method protected virtual (serialize-move move))
+    (method protected virtual (deserialize-move game value))
+    (method protected virtual (render-game request))
+    (method protected override (handle-request request port server))))

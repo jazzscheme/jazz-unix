@@ -1,0 +1,3 @@
+(module jazz.crash.unix jazz
+  (import (jazz.snapshot))
+  (definition package (setup-crash-handler log?)))

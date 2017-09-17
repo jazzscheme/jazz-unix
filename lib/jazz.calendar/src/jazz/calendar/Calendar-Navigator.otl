@@ -1,0 +1,22 @@
+(module jazz.calendar.Calendar-Navigator jazz
+  (import (jazz.calendar))
+  (import (jazz.graphic))
+  (import (jazz.handler))
+  (import (jazz.jml))
+  (import (jazz.locale))
+  (import (jazz.resource))
+  (import (jazz.ui))
+  (import (time))
+  (class Calendar-Navigator extends Layout-View
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms))
+    (method protected override (finish host))
+    (method public final (get-tree))
+    (method public final (get-calendar))
+    (method protected final (on-double-click evt))
+    (method protected final (on-previous-month evt))
+    (method protected final (on-next-month evt))
+    (method public final (update-month date)))
+  (class Navigator-Calendar extends Calendar-View
+    (method protected override (date-update))))

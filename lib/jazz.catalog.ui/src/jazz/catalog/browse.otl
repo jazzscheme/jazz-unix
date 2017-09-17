@@ -1,0 +1,10 @@
+(module jazz.catalog.browse jazz
+  (import (jazz.catalog))
+  (import (jazz.resource))
+  (import (jazz.tree))
+  (generic (insert-definition entry tree father level sort?))
+  (generic (insert-self entry tree father level))
+  (generic (insert-self-definitions entry tree father level sort?))
+  (generic (insert-state entry level definitions))
+  (generic (insert-ascendants entry tree father))
+  (generic (insert-interfaces entry tree father)))

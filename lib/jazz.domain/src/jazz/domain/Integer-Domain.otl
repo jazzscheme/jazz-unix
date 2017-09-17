@@ -1,0 +1,7 @@
+(module jazz.domain.Integer-Domain jazz
+  (import (jazz.domain))
+  (class Integer-Domain extends Number-Domain
+    (property upper-limit accessors generate)
+    (property lower-limit accessors generate)
+    (method protected override (validate-value value (validation-context (unspecified))))
+    (method protected override (parse-presentation text))))

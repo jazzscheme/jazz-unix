@@ -1,0 +1,6 @@
+(module jazz.editor jazz
+  (export (jazz.editor.Code-Explorer (autoload Code-Explorer Code-Explorer)))
+  (export (jazz.editor.Code-Syntax (autoload Code-Syntax Code-Syntax)))
+  (export (jazz.editor.Code-Text-Actions (autoload Code-Text-Actions Code-Text-Actions)))
+  (export (jazz.editor.Code-Text-Preferences (autoload Code-Text-Preferences Code-Text-Preferences)))
+  (export (jazz.editor.Code-Text-View (autoload Code-Text-View Code-Text-View))))

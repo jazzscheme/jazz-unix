@@ -1,0 +1,4 @@
+(module jazz.designer.entry.Editor-Entry jazz
+  (import (jazz.component))
+  (class Editor-Entry extends Component
+    (property entry-class accessors generate)))

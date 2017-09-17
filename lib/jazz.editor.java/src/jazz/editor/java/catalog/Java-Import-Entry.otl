@@ -1,0 +1,9 @@
+(module jazz.editor.java.catalog.Java-Import-Entry jazz
+  (import (jazz.editor.java))
+  (import (jazz.io))
+  (import (jazz.resource))
+  (class Java-Import-Entry extends Java-Entry
+    (method protected override (initialize name line column end-line end-column))
+    (method protected override (print-catalog level output))
+    (method protected override (get-image))
+    (method protected override (update-indexes definitions-index references-index))))

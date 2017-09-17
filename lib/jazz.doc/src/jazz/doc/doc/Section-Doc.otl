@@ -1,0 +1,10 @@
+(module jazz.doc.doc.Section-Doc jazz
+  (import (jazz.doc))
+  (import (jazz.io))
+  (class Section-Doc extends Doc
+    (method meta protected override (get-class-descriptor (context: context (unspecified))))
+    (property sort? accessors generate)
+    (slot catalog)
+    (method protected override (get-catalog))
+    (method protected override (set-catalog cat))
+    (method protected final (html-output-file))))

@@ -1,0 +1,13 @@
+(module jazz.schema.data.Data-Source jazz
+  (import (jazz.component))
+  (import (jazz.schema))
+  (class Data-Source extends Component implements Schema-Source
+    (method meta protected override (get-class-descriptor (context: context (unspecified))))
+    (property username accessors generate)
+    (property password accessors generate)
+    (method public virtual (validate))
+    (method public virtual (get-provider))
+    (method public virtual (new-connection))
+    (method public virtual (get-connection-string))
+    (method public virtual (get-connection-properties))
+    (method public virtual (new-inventory connection . rest))))

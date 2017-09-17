@@ -1,0 +1,14 @@
+(module jazz.sample.gomoku.Gomoku-Application jazz
+  (import (jazz.application))
+  (import (jazz.jml))
+  (import (jazz.sample.gomoku))
+  (import (jazz.window))
+  (import (jazz.workspace))
+  (class Gomoku-Application extends Application
+    (method protected override (process-name))
+    (method protected override (new-toplevel))
+    (method protected override (finish-process)))
+  (class Gomoku-Toplevel extends Toplevel
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms))))

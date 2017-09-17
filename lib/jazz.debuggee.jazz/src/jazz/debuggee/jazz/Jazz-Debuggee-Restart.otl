@@ -1,0 +1,9 @@
+(module jazz.debuggee.jazz.Jazz-Debuggee-Restart jazz
+  (import (jazz.debuggee.autoload))
+  (class Jazz-Debuggee-Restart extends Debuggee-Restart
+    (slot thread accessors generate)
+    (slot restart accessors generate)
+    (method protected override (initialize thread restart))
+    (method protected override (get-id))
+    (method protected override (get-name))
+    (method protected override (get-message))))

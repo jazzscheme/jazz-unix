@@ -1,0 +1,7 @@
+(module jazz.action.Actions jazz
+  (import (jazz.component))
+  (class Actions extends Component
+    (method meta protected override (get-class-descriptor (context: context (unspecified))))
+    (property title accessors generate)
+    (method protected virtual (update-actions for))
+    (method public virtual (actions-orphaned?))))

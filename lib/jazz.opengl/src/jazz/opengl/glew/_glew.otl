@@ -1,0 +1,7 @@
+(module jazz.opengl.glew jazz
+  (export (jazz.opengl.glew.foreign))
+  (import (jazz.opengl.glew.foreign))
+  (definition public (get-opengl-context?))
+  (definition public (set-opengl-context? flag))
+  (definition public (gl-check-error (tag (unspecified))))
+  (definition public (gl-colorize color)))

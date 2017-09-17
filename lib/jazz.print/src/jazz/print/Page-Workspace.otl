@@ -1,0 +1,11 @@
+(module jazz.print.Page-Workspace jazz
+  (import (jazz.jml))
+  (import (jazz.print))
+  (import (jazz.reference))
+  (import (jazz.resource))
+  (import (jazz.workspace))
+  (class Page-Workspace extends Workspace-Preferences
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms))
+    (property previous accessors generate)))

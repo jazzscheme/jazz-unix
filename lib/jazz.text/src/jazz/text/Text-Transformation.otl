@@ -1,0 +1,4 @@
+(module jazz.text.Text-Transformation jazz
+  (import (jazz.jml))
+  (class Text-Transformation extends JML-Transformation
+    (method protected final (<bulleted> node))))

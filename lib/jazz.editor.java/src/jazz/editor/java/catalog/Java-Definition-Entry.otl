@@ -1,0 +1,16 @@
+(module jazz.editor.java.catalog.Java-Definition-Entry jazz
+  (import (jazz.catalog.edit))
+  (import (jazz.editor.java))
+  (import (jazz.resource))
+  (class Java-Definition-Entry extends Java-Entry
+    (slot kind getter generate)
+    (slot parameters getter generate)
+    (slot body-line getter generate)
+    (slot body-column getter generate)
+    (slot body-end-line getter generate)
+    (slot body-end-column getter generate)
+    (method protected override (initialize name kind parameters line column end-line end-column body-line body-column body-end-line body-end-column references))
+    (method protected override (print-catalog level output))
+    (method protected override (get-image))
+    (method protected override (present))
+    (method protected override (update-indexes definitions-index references-index))))

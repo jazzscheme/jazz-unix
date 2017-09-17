@@ -1,0 +1,8 @@
+(module jazz.favorite.Favorite-Search jazz
+  (import (jazz.application))
+  (import (jazz.favorite))
+  (class Favorite-Search extends Favorite
+    (method meta protected override (get-class-descriptor (context: context (unspecified))))
+    (property directories accessors generate)
+    (property extensions accessors generate)
+    (method protected override (launch))))

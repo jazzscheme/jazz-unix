@@ -1,0 +1,12 @@
+(module jazz.sample.game.minimax jazz
+  (import (jazz.platform))
+  (class Minimax-Statistics extends Object
+    (slot last-eval accessors generate)
+    (slot last-evaluations accessors generate)
+    (slot last-evaluations-count <fx> accessors generate)
+    (slot last-time accessors generate)
+    (method protected final (increase-last-evaluations-count)))
+  (definition public (minimax me iterate-candidates play unplay evaluate-position evaluate-move-delta (current-eval: current-eval (unspecified)) (search-depth: search-depth (unspecified))))
+  (definition public (minimax-interpreted? ai-unit))
+  (definition public (minimax-interpreted-warner ai-unit title))
+  (definition public (warn-minimax-interpreted ai-unit title)))

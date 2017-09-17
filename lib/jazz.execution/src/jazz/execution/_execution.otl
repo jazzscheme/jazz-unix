@@ -1,0 +1,5 @@
+(module jazz.execution jazz
+  (definition public (with-execution-context proc (title: title (unspecified)) (details: details (unspecified)) (reporter: reporter (unspecified))))
+  (definition public (with-execution-node proc (title: title (unspecified)) (details: details (unspecified)) (reporter: reporter (unspecified))))
+  (definition public (get-execution-context))
+  (definition public (get-execution-stack)))

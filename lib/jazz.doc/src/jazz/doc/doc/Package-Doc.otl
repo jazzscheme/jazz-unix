@@ -1,0 +1,4 @@
+(module jazz.doc.doc.Package-Doc jazz
+  (import (jazz.doc))
+  (class Package-Doc extends Element-Doc
+    (method meta protected override (get-class-descriptor (context: context (unspecified))))))

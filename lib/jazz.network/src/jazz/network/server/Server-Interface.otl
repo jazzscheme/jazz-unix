@@ -1,0 +1,16 @@
+(module jazz.network.server.Server-Interface jazz
+  (interface Server-Interface
+    (method public virtual (get-state))
+    (method public virtual (start))
+    (method public virtual (stop))
+    (method public virtual (restart))
+    (method public virtual (wait-started))
+    (method public virtual (wait-stopped))
+    (method public virtual (server-name))
+    (method public virtual (server-title))
+    (method public virtual (server-version))
+    (method public virtual (server-host))
+    (method public virtual (server-service))
+    (method public virtual (server-alternate-service))
+    (method public virtual (server-hits))
+    (method public virtual (server-debug?))))

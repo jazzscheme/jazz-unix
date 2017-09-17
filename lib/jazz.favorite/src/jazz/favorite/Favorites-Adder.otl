@@ -1,0 +1,20 @@
+(module jazz.favorite.Favorites-Adder jazz
+  (import (jazz.favorite))
+  (import (jazz.graphic))
+  (import (jazz.handler))
+  (import (jazz.jml))
+  (import (jazz.text))
+  (import (jazz.ui))
+  (import (jazz.view))
+  (class Favorites-Adder extends View
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms))
+    (property default-title accessors generate)
+    (property default-root accessors generate)
+    (method protected override (finish rest)))
+  (class Request-Tree extends Favorites-Tree
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms))
+    (method protected final (on-double-click evt))))

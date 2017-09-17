@@ -1,0 +1,4 @@
+(module jazz.tree jazz
+  (export (jazz.tree.autoload))
+  (import (jazz.tree.autoload))
+  (definition public (allocate-tree-label title)))

@@ -1,0 +1,5 @@
+(module jazz.foreign jazz
+  (export (jazz.foreign.syntax (phase syntax)))
+  (import (jazz.syntax))
+  (definition public (with-callable name thunk))
+  (definition public (with-callback name exit-value thunk)))

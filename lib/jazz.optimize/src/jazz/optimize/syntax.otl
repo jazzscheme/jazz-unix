@@ -1,0 +1,32 @@
+(module jazz.optimize.syntax jazz
+  (import (jazz.core (phase syntax)))
+  (import (jazz.dialect.classes.foundation))
+  (import (fmt))
+  (import (fmt.fmt-c))
+  (native jazz:call-emit-expression)
+  (native ienv)
+  (native iframe)
+  (definition protected debug-optimize?)
+  (definition protected debug-lambda?)
+  (definition protected disable-optimize?)
+  (class Definition-Optimize-Declaration extends Definition-Declaration
+    (method protected override (emit-declaration environment backend)))
+  (class Optimize extends Expression
+    (slot debug? getter generate)
+    (slot body getter generate)
+    (method protected override (initialize debug? body . rest))
+    (method protected override (emit-expression declaration environment backend)))
+  (class Inline extends Expression
+    (slot code getter generate)
+    (slot expansion getter generate)
+    (method protected override (initialize code expansion . rest))
+    (method protected override (emit-expression declaration environment backend)))
+  (class For extends Expression
+    (slot variable getter generate)
+    (slot init getter generate)
+    (slot test getter generate)
+    (slot update getter generate)
+    (slot body getter generate)
+    (slot expansion getter generate)
+    (method protected override (initialize variable init test update body expansion . rest))
+    (method protected override (emit-expression declaration environment backend))))

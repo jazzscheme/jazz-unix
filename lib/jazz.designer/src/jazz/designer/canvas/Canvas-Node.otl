@@ -1,0 +1,13 @@
+(module jazz.designer.canvas.Canvas-Node jazz
+  (import (jazz.component))
+  (import (jazz.descriptor))
+  (import (jazz.jml))
+  (import (jazz.resource))
+  (class Canvas-Node extends Component
+    (method meta protected override (get-class-descriptor (context: context (unspecified)))))
+  (class Canvas-Node-Descriptor extends Component-Descriptor
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms))
+    (method protected override (class-name->presentation class name))
+    (method protected override (component-get-addable-details component))))

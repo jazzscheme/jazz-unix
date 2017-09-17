@@ -1,0 +1,10 @@
+(module jazz.text.Table-Border jazz
+  (import (jazz.graphic))
+  (import (jazz.jml))
+  (import (jazz.text))
+  (import (jazz.tree))
+  (import (jazz.ui))
+  (class Table-Border extends Border-View
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms))))

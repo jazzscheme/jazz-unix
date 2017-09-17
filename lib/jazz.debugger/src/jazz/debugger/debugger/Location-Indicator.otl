@@ -1,0 +1,6 @@
+(module jazz.debugger.debugger.Location-Indicator jazz
+  (import (jazz.application))
+  (import (jazz.project))
+  (import (jazz.text))
+  (class Location-Indicator extends Indicator
+    (method public final (edit-location location (select?: select? (unspecified))))))

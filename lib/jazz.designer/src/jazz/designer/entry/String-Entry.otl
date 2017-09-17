@@ -1,0 +1,3 @@
+(module jazz.designer.entry.String-Entry jazz
+  (import (jazz.designer))
+  (class String-Entry extends Text-Entry))

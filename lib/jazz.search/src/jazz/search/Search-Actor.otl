@@ -1,0 +1,15 @@
+(module jazz.search.Search-Actor jazz
+  (import (jazz.search))
+  (class Search-Actor extends Object
+    (method package final (on-find evt))
+    (method package final (on-find-in-text evt))
+    (method package final (on-find-in-projects evt))
+    (method package final (on-find-in-directories evt))
+    (method package final (on-find-in-user evt))
+    (method package final (on-find-forward evt))
+    (method package final (on-find-backward evt))
+    (method package final (on-replace evt))
+    (method package final (on-replace&find-forward evt))
+    (method package final (on-replace-all evt))
+    (method package final (on-replace-selected evt))
+    (method package final (on-previous-search evt))))

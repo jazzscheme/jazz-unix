@@ -1,0 +1,3 @@
+(module jazz.columnar jazz
+  (export (jazz.columnar.autoload))
+  (definition public (display-tabulated data output)))

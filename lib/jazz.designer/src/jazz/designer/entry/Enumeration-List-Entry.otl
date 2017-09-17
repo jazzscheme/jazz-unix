@@ -1,0 +1,3 @@
+(module jazz.designer.entry.Enumeration-List-Entry jazz
+  (import (jazz.designer))
+  (class Enumeration-List-Entry extends Property-Entry))
