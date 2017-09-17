@@ -1,0 +1,9 @@
+(module jazz.opengl.sample.immediate.window jazz
+  (import (jazz.graphic))
+  (import (jazz.opengl))
+  (import (jazz.opengl.glew))
+  (import (jazz.opengl.window))
+  (import (jazz.opengl.sample))
+  (import (jazz.opengl.sample.syntax (phase syntax)))
+  (class Immediate-Showcase-Window extends OpenGL-Window
+    (method protected override (draw-scene))))

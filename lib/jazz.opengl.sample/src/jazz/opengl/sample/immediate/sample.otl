@@ -1,0 +1,6 @@
+(module jazz.opengl.sample.immediate.sample jazz
+  (import (jazz.application))
+  (import (jazz.opengl.window))
+  (import (jazz.opengl.sample.immediate.window))
+  (class Immediate-Sample extends Application
+    (method protected override (new-toplevel))))
