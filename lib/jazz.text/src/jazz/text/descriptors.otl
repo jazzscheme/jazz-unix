@@ -1,0 +1,44 @@
+(module jazz.text.descriptors jazz
+  (import (jazz.designer))
+  (import (jazz.descriptor))
+  (import (jazz.document.descriptors))
+  (import (jazz.domain))
+  (import (jazz.exemplar.descriptors))
+  (import (jazz.jml))
+  (import (jazz.outline.descriptors))
+  (import (jazz.preferences.descriptors))
+  (import (jazz.resource))
+  (class Text-Preferences-Descriptor extends Document-Preferences-Descriptor
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms)))
+  (class Plain-Text-Preferences-Descriptor extends Document-Preferences-Descriptor
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms)))
+  (class Style-Preferences-Descriptor extends Exemplar-Preferences-Descriptor
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms)))
+  (class Styles-Preferences-Descriptor extends Exemplars-Preferences-Descriptor
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms)))
+  (class Text-Style-Preferences-Descriptor extends Preferences-Descriptor
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms)))
+  (class Text-View-Descriptor extends Outline-View-Descriptor
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms))
+    (method protected override (component-surrogate-class component))
+    (method protected override (component-save-properties component designer)))
+  (class Entry-Text-View-Descriptor extends Text-View-Descriptor
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms)))
+  (class Text-Model-Descriptor extends Outline-View-Descriptor
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms))))

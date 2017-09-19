@@ -1,0 +1,72 @@
+(module jazz.doc.descriptors jazz
+  (import (jazz.descriptor))
+  (import (jazz.domain))
+  (import (jazz.doc))
+  (import (jazz.jml))
+  (import (jazz.resource))
+  (class Doc-Descriptor extends Component-Descriptor
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms))
+    (method protected override (component-get-categorized-addable-classes component)))
+  (class Element-Doc-Descriptor extends Doc-Descriptor
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms)))
+  (class Category-Doc-Descriptor extends Element-Doc-Descriptor
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms)))
+  (class Class-Doc-Descriptor extends Category-Doc-Descriptor
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms)))
+  (class Concept-Doc-Descriptor extends Doc-Descriptor
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms)))
+  (class Constant-Doc-Descriptor extends Element-Doc-Descriptor
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms)))
+  (class Definition-Doc-Descriptor extends Element-Doc-Descriptor
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms)))
+  (class Field-Doc-Descriptor extends Definition-Doc-Descriptor
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms)))
+  (class Interface-Doc-Descriptor extends Category-Doc-Descriptor
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms)))
+  (class Method-Doc-Descriptor extends Definition-Doc-Descriptor
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms)))
+  (class Package-Doc-Descriptor extends Element-Doc-Descriptor
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms)))
+  (class Primitive-Doc-Descriptor extends Definition-Doc-Descriptor
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms)))
+  (class Slot-Doc-Descriptor extends Definition-Doc-Descriptor
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms)))
+  (class Property-Doc-Descriptor extends Slot-Doc-Descriptor
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms)))
+  (class Section-Doc-Descriptor extends Doc-Descriptor
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms))
+    (method protected override (component-sort-components? component)))
+  (class Syntax-Doc-Descriptor extends Definition-Doc-Descriptor
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms))))

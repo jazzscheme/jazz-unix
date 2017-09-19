@@ -1,0 +1,13 @@
+(module jazz.document.descriptors jazz
+  (import (jazz.descriptor))
+  (import (jazz.domain))
+  (import (jazz.jml))
+  (import (jazz.preferences.descriptors))
+  (class Document-Preferences-Descriptor extends Preferences-Descriptor
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms)))
+  (class Documents-Preferences-Descriptor extends Preferences-Descriptor
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms))))

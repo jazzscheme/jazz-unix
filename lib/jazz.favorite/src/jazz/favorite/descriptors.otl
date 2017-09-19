@@ -1,0 +1,42 @@
+(module jazz.favorite.descriptors jazz
+  (import (jazz.component.descriptors))
+  (import (jazz.descriptor))
+  (import (jazz.domain))
+  (import (jazz.jml))
+  (import (jazz.resource))
+  (class Favorite-Descriptor extends Component-Descriptor
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms)))
+  (class Favorites-Descriptor extends Group-Descriptor
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms)))
+  (class Favorite-Clipboard-Descriptor extends Favorite-Descriptor
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms)))
+  (class Favorite-Definition-Descriptor extends Favorite-Descriptor
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms)))
+  (class Favorite-Directory-Descriptor extends Favorite-Descriptor
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms)))
+  (class Favorite-File-Descriptor extends Favorite-Descriptor
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms)))
+  (class Favorite-Handler-Descriptor extends Favorite-Descriptor
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms)))
+  (class Favorite-Launch-Descriptor extends Favorite-Descriptor
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms)))
+  (class Favorite-Search-Descriptor extends Favorite-Descriptor
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms))))

@@ -1,0 +1,17 @@
+(module jazz.search.descriptors jazz
+  (import (jazz.descriptor))
+  (import (jazz.domain))
+  (import (jazz.figure.descriptors))
+  (import (jazz.jml))
+  (import (jazz.preferences.descriptors))
+  (import (jazz.search))
+  (class Search-Preferences-Descriptor extends Figure-Preferences-Descriptor
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms))
+    (method protected override (component-get-addable-base component))
+    (method protected override (component-get-addable-details component)))
+  (class Search-View-Preferences-Descriptor extends Preferences-Descriptor
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms))))

@@ -1,0 +1,9 @@
+(module jazz.debugger.jazz.descriptors jazz
+  (import (jazz.debugger.gambit.descriptors))
+  (import (jazz.descriptor))
+  (import (jazz.domain))
+  (import (jazz.jml))
+  (class Jazz-Project-Descriptor extends Gambit-Project-Descriptor
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms))))

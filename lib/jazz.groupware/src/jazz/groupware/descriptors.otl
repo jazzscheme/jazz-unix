@@ -1,0 +1,30 @@
+(module jazz.groupware.descriptors jazz
+  (import (jazz.descriptor))
+  (import (jazz.document.descriptors))
+  (import (jazz.domain))
+  (import (jazz.favorite.descriptors))
+  (import (jazz.figure.descriptors))
+  (import (jazz.groupware))
+  (import (jazz.jml))
+  (class Compare-Text-Preferences-Descriptor extends Document-Preferences-Descriptor
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms)))
+  (class Favorite-Compare-Directories-Descriptor extends Favorite-Descriptor
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms)))
+  (class Favorite-Compare-Files-Descriptor extends Favorite-Descriptor
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms)))
+  (class Compare-Trees-Preferences-Descriptor extends Figure-Preferences-Descriptor
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms)))
+  (class Compare-Directories-Preferences-Descriptor extends Compare-Trees-Preferences-Descriptor
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms))
+    (method protected override (component-get-categorized-addable-classes component))
+    (method protected override (component-get-addable-details component))))

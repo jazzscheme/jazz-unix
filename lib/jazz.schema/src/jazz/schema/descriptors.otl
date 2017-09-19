@@ -1,0 +1,20 @@
+(module jazz.schema.descriptors jazz
+  (import (jazz.database))
+  (import (jazz.descriptor))
+  (import (jazz.domain))
+  (import (jazz.jml))
+  (import (jazz.process))
+  (import (jazz.resource))
+  (class Data-Source-Descriptor extends Component-Descriptor
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms))
+    (method protected override (class-presentation->name class presentation))
+    (method protected override (class-name->presentation class name))
+    (method protected override (class-persist-property? class property)))
+  (class Data-Sources-Descriptor extends Component-Descriptor
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms))
+    (method protected override (component-get-presentation component))
+    (method protected override (component-get-categorized-addable-classes component))))

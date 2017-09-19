@@ -1,0 +1,39 @@
+(module jazz.tree.descriptors jazz
+  (import (jazz.component.descriptors))
+  (import (jazz.descriptor))
+  (import (jazz.domain))
+  (import (jazz.graphic.descriptors))
+  (import (jazz.integrity))
+  (import (jazz.jml))
+  (import (jazz.outline.descriptors))
+  (import (jazz.preferences.descriptors))
+  (import (jazz.reference))
+  (import (jazz.resource))
+  (import (jazz.tree))
+  (import (jazz.ui))
+  (import (jazz.ui.descriptors))
+  (class Tree-Preferences-Descriptor extends Preferences-Descriptor
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms)))
+  (class Tree-Column-Descriptor extends Component-Descriptor
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms)))
+  (class Tree-Header-Descriptor extends Header-View-Descriptor
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms)))
+  (class Tree-Label-Descriptor extends Tree-Column-Descriptor
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms)))
+  (class Tree-Node-Descriptor extends Tree-Label-Descriptor
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms)))
+  (class Tree-View-Descriptor extends Outline-View-Old-Descriptor
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms))
+    (method protected override (component-get-categorized-addable-classes component))))

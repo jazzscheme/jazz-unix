@@ -1,0 +1,57 @@
+(module jazz.workspace.descriptors jazz
+  (import (jazz.descriptor))
+  (import (jazz.document.descriptors))
+  (import (jazz.domain))
+  (import (jazz.figure.descriptors))
+  (import (jazz.jml))
+  (import (jazz.preferences.descriptors))
+  (import (jazz.resource))
+  (import (jazz.workspace))
+  (class Command-Text-Preferences-Descriptor extends Document-Preferences-Descriptor
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms)))
+  (class Docked-Preferences-Descriptor extends Figure-Preferences-Descriptor
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms))
+    (method protected override (component-get-component-image component))
+    (method protected override (component-presentation-property? component property))
+    (method protected override (component-get-presentation component))
+    (method protected override (component-set-presentation component designer title)))
+  (class Pad-Preferences-Descriptor extends Figure-Preferences-Descriptor
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms))
+    (method protected override (component-get-categorized-addable-classes component)))
+  (class Splitter-Preferences-Descriptor extends Figure-Preferences-Descriptor
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms))
+    (method protected override (component-get-categorized-addable-classes component)))
+  (class Stage-Preferences-Descriptor extends Figure-Preferences-Descriptor
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms)))
+  (class Toolbar-Preferences-Descriptor extends Figure-Preferences-Descriptor
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms))
+    (method protected override (component-presentation-property? component property))
+    (method protected override (component-get-presentation component))
+    (method protected override (component-set-presentation component designer title)))
+  (class Workspace-Preferences-Descriptor extends Figure-Preferences-Descriptor
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms))
+    (method protected override (component-get-categorized-addable-classes component)))
+  (class Workspaces-Preferences-Descriptor extends Preferences-Descriptor
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms))
+    (method protected override (component-get-categorized-addable-classes component))
+    (method protected override (component-get-addable-details component)))
+  (class Associations-Domain extends List-Domain
+    (method protected override (finish rest)))
+  (class Association-Domain extends Value-Domain
+    (method protected override (present-value model))))

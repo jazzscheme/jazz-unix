@@ -1,0 +1,13 @@
+(module jazz.database.inventory.Inventory-Constraint jazz
+  (class Inventory-Constraint extends Object
+    (slot inventory getter generate)
+    (slot parent getter generate)
+    (method protected override (initialize inventory parent))
+    (method public virtual (get-handle))
+    (method public virtual (get-title))
+    (method public virtual (get-text))
+    (method public virtual (set-text value))
+    (method public virtual (get-checked?))
+    (method public virtual (set-checked? value))
+    (method public virtual (get-exclude-replication?))
+    (method public virtual (set-exclude-replication? value))))

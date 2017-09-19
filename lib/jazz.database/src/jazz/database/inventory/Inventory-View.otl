@@ -1,0 +1,8 @@
+(module jazz.database.inventory.Inventory-View jazz
+  (class Inventory-View extends Object
+    (slot inventory getter generate)
+    (slot parent getter generate)
+    (method protected override (initialize inventory parent))
+    (method public virtual (get-title))
+    (method public virtual (get-text))
+    (method public virtual (set-text value))))

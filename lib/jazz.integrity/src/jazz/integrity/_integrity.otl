@@ -1,0 +1,6 @@
+(module jazz.integrity jazz
+  (export (jazz.integrity.autoload))
+  (class Validate-Exception extends Exception
+    (slot violation getter generate)
+    (slot stop-descent? getter generate)
+    (method protected override (initialize violation (stop-descent?: stop-descent? (unspecified))))))

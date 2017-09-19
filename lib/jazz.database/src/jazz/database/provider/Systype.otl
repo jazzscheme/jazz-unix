@@ -1,0 +1,17 @@
+(module jazz.database.provider.Systype jazz
+  (import (jazz.database))
+  (class Systype extends Object
+    (slot name getter generate)
+    (slot size getter generate)
+    (slot precision getter generate)
+    (slot scale getter generate)
+    (slot default-value getter generate)
+    (method protected override (initialize name size precision scale default-value))
+    (method protected override (compare-object target))
+    (method protected override (print output readably))
+    (method public final (get-sizeable?))
+    (method public final (get-fixed?))
+    (method public final (get-precisionable?))
+    (method public final (get-scalable?))
+    (method public final (get-defaultable?))
+    (method public final (present))))

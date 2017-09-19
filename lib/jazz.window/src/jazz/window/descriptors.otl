@@ -1,0 +1,10 @@
+(module jazz.window.descriptors jazz
+  (import (jazz.descriptor))
+  (import (jazz.domain))
+  (import (jazz.figure.descriptors))
+  (import (jazz.jml))
+  (class View-Player-Descriptor extends Figure-Descriptor
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms))
+    (method protected override (component-get-components component))))

@@ -1,0 +1,13 @@
+(module jazz.process.descriptors jazz
+  (import (jazz.descriptor))
+  (import (jazz.domain))
+  (import (jazz.jml))
+  (import (jazz.preferences.descriptors))
+  (class Process-Preferences-Descriptor extends Preferences-Descriptor
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms)))
+  (class Protocols-Domain extends List-Domain
+    (method protected override (finish rest)))
+  (class Protocol-Domain extends Value-Domain
+    (method protected override (present-value model))))

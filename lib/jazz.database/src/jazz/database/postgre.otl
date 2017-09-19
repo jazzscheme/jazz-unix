@@ -1,0 +1,12 @@
+(module jazz.database.postgre jazz
+  (import (jazz.database))
+  (import (jazz.jml))
+  (class Postgre-Data-Source extends Database-Data-Source
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms))
+    (property server accessors generate)
+    (property database accessors generate)
+    (method protected override (valid-backends))
+    (method protected override (get-connection-string))
+    (method protected override (convert-symbolic-sql symbolic-sql))))

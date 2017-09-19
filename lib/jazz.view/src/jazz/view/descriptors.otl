@@ -1,0 +1,18 @@
+(module jazz.view.descriptors jazz
+  (import (jazz.application))
+  (import (jazz.designer))
+  (import (jazz.descriptor))
+  (import (jazz.domain))
+  (import (jazz.figure.descriptors))
+  (import (jazz.graphic))
+  (import (jazz.jml))
+  (import (jazz.resource))
+  (import (jazz.view))
+  (class View-Descriptor extends Figure-Descriptor
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms))
+    (method protected override (can-try-out? class))
+    (method protected override (try-out class))
+    (method protected override (component-get-categorized-addable-classes component))
+    (method protected override (component-surrogate-class component))))

@@ -1,0 +1,8 @@
+(module jazz.database.Database-Data-Source jazz
+  (import (jazz.schema))
+  (class Database-Data-Source extends Data-Source
+    (property backend accessors generate)
+    (method protected override (finish rest))
+    (method protected virtual (valid-backends))
+    (method protected virtual (convert-symbolic-sql symbolic-sql))
+    (method public final (post-process-request request))))

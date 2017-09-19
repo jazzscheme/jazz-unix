@@ -1,0 +1,18 @@
+(module jazz.outline.descriptors jazz
+  (import (jazz.descriptor))
+  (import (jazz.domain))
+  (import (jazz.graphic.descriptors))
+  (import (jazz.jml))
+  (import (jazz.view.descriptors))
+  (class Outline-Model-Descriptor extends View-Descriptor
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms)))
+  (class Outline-View-Descriptor extends View-Descriptor
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms)))
+  (class Outline-View-Old-Descriptor extends View-Descriptor
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms))))

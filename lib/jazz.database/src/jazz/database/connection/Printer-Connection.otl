@@ -1,0 +1,11 @@
+(module jazz.database.connection.Printer-Connection jazz
+  (import (jazz.database))
+  (class Printer-Connection extends Connection
+    (slot printer getter generate)
+    (method protected override (initialize prt))
+    (method protected override (load-request command . rest))
+    (method protected override (load-multirequest command . rest))
+    (method protected override (load-rows command))
+    (method protected override (load-row command))
+    (method protected override (execute command))
+    (method protected override (comment string . parameters))))

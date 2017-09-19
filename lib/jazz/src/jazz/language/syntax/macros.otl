@@ -3,6 +3,7 @@
   (import (scheme.syntax-rules (phase syntax)))
   (syntax public submodule)
   (syntax public constant)
+  (syntax public expand-body)
   (syntax public when)
   (syntax public unless)
   (syntax public prog1)

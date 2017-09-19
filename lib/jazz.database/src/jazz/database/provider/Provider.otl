@@ -1,0 +1,16 @@
+(module jazz.database.provider.Provider jazz
+  (import (jazz.database))
+  (import (jazz.time))
+  (class Provider extends Object
+    (method public virtual (external-name))
+    (method public virtual (get-datatype))
+    (method public virtual (supports-multirequests?))
+    (method public virtual (format-value value))
+    (method protected virtual (format-variable variable))
+    (method protected virtual (format-string string))
+    (method protected virtual (format-boolean value))
+    (method protected virtual (format-date date))
+    (method protected virtual (format-datetime date))
+    (method public virtual (present))
+    (method public virtual (browser-class))
+    (method public virtual (new-updater connection))))

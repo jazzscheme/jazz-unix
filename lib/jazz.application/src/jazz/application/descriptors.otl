@@ -1,0 +1,54 @@
+(module jazz.application.descriptors jazz
+  (import (jazz.application))
+  (import (jazz.descriptor))
+  (import (jazz.domain))
+  (import (jazz.exemplar.descriptors))
+  (import (jazz.jml))
+  (import (jazz.preferences.descriptors))
+  (import (jazz.process.descriptors))
+  (class Application-Preferences-Descriptor extends Process-Preferences-Descriptor
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms)))
+  (class Toolbar-Classes-Domain extends List-Domain
+    (method protected override (finish rest)))
+  (class Toolbar-Class-Domain extends Value-Domain
+    (method protected override (present-value model)))
+  (class Aliases-Preferences-Descriptor extends Preferences-Descriptor
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms))
+    (method protected override (component-get-categorized-addable-classes component))
+    (method protected override (component-get-addable-details component)))
+  (class Alias-Configuration-Descriptor extends Preferences-Descriptor
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms))
+    (method protected override (component-presentation-property? component property))
+    (method protected override (component-get-presentation component))
+    (method protected override (component-set-presentation component designer presentation)))
+  (class Favorites-Preferences-Descriptor extends Preferences-Descriptor
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms))
+    (method protected override (component-get-categorized-addable-classes component))
+    (method protected override (component-get-addable-details component)))
+  (class Favorite-Configuration-Descriptor extends Preferences-Descriptor
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms))
+    (method protected override (component-presentation-property? component property))
+    (method protected override (component-get-presentation component))
+    (method protected override (component-set-presentation component designer shortcut)))
+  (class Interface-Preferences-Descriptor extends Preferences-Descriptor
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms)))
+  (class Fonts-Preferences-Descriptor extends Exemplars-Preferences-Descriptor
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms)))
+  (class Print-Preferences-Descriptor extends Preferences-Descriptor
+    (method meta protected override (set-class-form form))
+    (method meta protected override (get-class-form))
+    (method meta protected override (get-class-forms))))

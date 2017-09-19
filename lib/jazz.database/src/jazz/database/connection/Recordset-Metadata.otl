@@ -1,0 +1,12 @@
+(module jazz.database.connection.Recordset-Metadata jazz
+  (import (jazz.schema))
+  (class Recordset-Metadata extends Object
+    (method public final (get-column field-name))
+    (method public final (get-fields))
+    (method public virtual (get-count))
+    (method public virtual (get-field field-name))
+    (method public virtual (get-field-value field-name))
+    (method public virtual (get-field-name field))
+    (method public virtual (get-field-type field))
+    (method public virtual (get-field-size field))
+    (method public virtual (get-field-precision field))))
